@@ -94,7 +94,7 @@
         this.topStartX = clientX
         this.scrollLeft += offsetX
 
-        let max = this.stv.lineWidth * this.maxCount
+        let max = this.stv.lineWidth * (this.tabs.length - this.maxCount)
 
         if (this.scrollLeft <= 0) {
           this.scrollLeft = 0
